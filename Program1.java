@@ -1,4 +1,6 @@
-//Write a Program Remove all the duplicate characters and white spaces from the string passed to the method and return the modified string.
+//Program-1
+//Write a Program Remove all the duplicate characters and white spaces
+// from the string passed to the method and return the modified string.
 
 
 public class Program1 {
