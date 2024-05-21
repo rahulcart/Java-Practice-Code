@@ -1,3 +1,5 @@
+//Calculate the average of three numbers
+//Return the average rounded off to two decimal digits
 class Calculator {
 
     // Implement your code here
