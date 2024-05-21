@@ -1,27 +1,19 @@
-//Program-1
-//Write a Program Remove all the duplicate characters and white spaces
-// from the string passed to the method and return the modified string.
+class Calculator {
 
+    // Implement your code here
+    public double findAverage(int number1,int number2,int number3){
+        double sum=(double)(number1+number2+number3)/3;
+        double num=(Math.round(sum*100.0)/100.0);
+        return num;
+    }
+}
 
-public class Program1 {
-    public static void main(String[] args) {
-        String str="my name is rahul";
-        String a=str.replace(" ","");
-        char str1[]=a.toCharArray();
-        int sum=0;
-        for (int i = 0; i < a.length(); i++) {
-            int j;
-            for (j = 0; j < i; j++) {
-                if (str1[i] == str1[j]) {
-                    break;
-                }
-            }
-            if(j==i){
-                str1[sum++]=str1[i];
-            }
-        }
+class Tester {
 
-        System.out.println(str1);
-
+    public static void main(String args[]) {
+        Calculator calculator = new Calculator();
+        // Invoke the method findAverage of the Calculator class and display the average
+        double show=calculator.findAverage(12,8,15);
+        System.out.println(show);
     }
 }
