@@ -1,63 +1,31 @@
-//Teacher(String teacherName, String subject, double salary)
-//Initialize the values of all the instance variables appropriately with the values passed
-//Create a Tester class. Create 4 objects of Teacher class. Create an array of type Teacher store
-// the created objects and display the details of the teachers.
+//Calculate and return the sum of the digits of the num member variable
 
-class Teacher {
-    private String teacherName;
-    private String subject;
-    private double salary;
-    public Teacher(String teacherName,String subject,double salary) {
-        this.teacherName=teacherName;
-        this.subject=subject;
-        this.salary=salary;
-    }
+class Calculator {
 
-    public String getTeacherName(String teacherName) {
-        return teacherName;
-    }
-
-    public void setTeacherName(String teacherName) {
-        this.teacherName=teacherName;
-    }
-
-    public String getSubject(String subject) {
-        return subject;
-    }
-
-    public void setSubject(String subject) {
-        this.subject=subject;
-    }
-
-    public double getSalary(double salary) {
-        return salary;
-    }
-
-    public void setSalary(double salary) {
-        this.salary=salary;
-    }
-
-    public void displayDetails() {
-        System.out.print("Teacher Name :"+teacherName);
-        System.out.print(", subject :"+subject);
-        System.out.print(", Salary :"+salary);
-        System.out.println();
+    // Implement your code here
+    public int num;
+    public int sumOfDigits(){
+        int sum=0;
+        while(num>0){
+            int digits=num%10;
+            sum+=digits;
+            num=num/10;
+        }
+        return sum;
     }
 }
 
+class Tester {
 
+    public static void main(String args[]) {
 
+        Calculator calculator = new Calculator();
 
-public class Program2{
-    public static void main(String[] args) {
-        Teacher object1=new Teacher("John","Math",65363);
-        Teacher object2=new Teacher("rahul","Science",32828);
-        Teacher object3=new Teacher("Manoj","Arts",29929);
-        Teacher object4=new Teacher("Ajay","SST",73828);
-        Teacher[] teachers={object1,object2,object3,object4};
-        for (Teacher i : teachers) {
-            i.displayDetails();
-        }
+        // Assign a value to the member variable num of Calculator class
+        calculator.num=123;
+
+        // Invoke the method sumOfDigits of Calculator class and display the output
+        System.out.println(calculator.sumOfDigits());
 
     }
 }
