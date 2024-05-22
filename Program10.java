@@ -2,6 +2,7 @@
 //Reverse each word in the string passed to the method without changing the order of the words and return the modified string.
 //Note: There should not be any extra blank/white space(s) in the output string.
 
+
 class Tester {
     public static String reverseEachWord(String str){
         //Implement your code here and change the return value accordingly
