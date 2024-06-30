@@ -1,4 +1,4 @@
-# Java-Practice-Code
+# Java-Practice-Programs
 
 Hello,Viewers<br>
 In This Repository All Programs is uploaded while during Learning Java Concepts.
